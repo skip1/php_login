@@ -47,12 +47,12 @@
                                   
                                   if (obj.exists)   {
                                 $("#msgbox").fadeTo(200, 0.1, function () {
-                                    $(this).html('This username already exists').addClass('messageboxerror').fadeTo(900, 1);
+                                    $(this).html('This username already exists').addClass('error').fadeTo(900, 1);
 
                                 });
                             } else if (data == 'empty') {
                                 $("#msgbox").fadeTo(200, 0.1, function () {
-                                    $(this).html('Not a valid username!').addClass('messageboxerror').fadeTo(900, 1);
+                                    $(this).html('Not a valid username!').addClass('error').fadeTo(900, 1);
 
                                 });
                             } else if (!allowedChars.test(username)) {
